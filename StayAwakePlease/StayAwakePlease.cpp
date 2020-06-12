@@ -1,8 +1,11 @@
 // Non-interactive application that wiggles the mouse and taps non-input
 // keys on an interval, to prevent a remote-desktop session from ending
-// due to inactivity.
+// due to inactivity. These are deliberately visible, but minor, interactions
+// to ensure they're transmitted to the remote client. Less visible options,
+// like a 'function-lock' key toggle or an immediately-reversed mouse move,
+// are not transmitted over certain things, like DREAMS.
 //
-// G++: Compile with the flag "-mwindows" to hide the window.
+// G++: Compile with the flag "-mwindows" to hide the console window.
 #include <windows.h>
 #pragma comment(lib, "user32.lib") 
 
